@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale - Pink PopMart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pink PopMart</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="categories.html" class="nav-link">Categories</a></li>
+            <li><a href="sale.html" class="nav-link">Sale</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+    <script src="nav-active.js"></script>
+    <br>
+    <br>
+
+    <section class="hero container">
+        <h1>Special Sale!</h1>
+        <p>Whether you're searching for the perfect gift or a charming addition to your collection, our special sale
+            has everything you need to spark joy. From adorable figurines to exclusive bags, you'll find discounts
+            that'll make your heart skip a beat!<br>
+            🎁 Why shop now?<br>
+            - Limited-Time Offers: Grab your favorites before they're gone!<br>
+            - Exclusive Deals: Save big on our cutest items.<br>
+            - Happiness Guaranteed: Perfect presents for loved ones—or yourself!
+        </p>
+    </section>
+
+    <section class="sale container">
+        <h2>Exclusive Sale Items</h2>
+        <div class="sale-items">
+            <div class="sale-item">
+                <img src="pink11.jpg" alt="Pink Bunny Limited Edition">
+                <h3>Pop Mart LABUBU Classic Bag Series — Plush Tote Bag (Brown)</h3>
+                <p class="old-price"><s>₱799</s></p>
+                <p class="new-price">₱499</p>
+                <button class="btn-primary"
+                    onclick="addToCart('Pop Mart LABUBU Classic Bag Series — Plush Tote Bag (Brown)')">Add to Cart</button>
+            </div>
+            <div class="sale-item">
+                <img src="pink3.jpg" alt="Molly Pink Doll">
+                <h3>Labubu V2: Dada Pink</h3>
+                <p class="old-price"><s>₱1,299</s></p>
+                <p class="new-price">₱1,099</p>
+                <button class="btn-primary" onclick="addToCart('Labubu V2: Dada Pink')">Add to Cart</button>
+            </div>
+            <div class="sale-item">
+                <img src="pink4.jpg" alt="Pink Bag Charm">
+                <h3>Skullpanda Mokoko Pink Figurine</h3>
+                <p class="old-price"><s>₱399</s></p>
+                <p class="new-price">₱299</p>
+                <button class="btn-primary" onclick="addToCart('Skullpanda Mokoko Pink Figurine')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews container">
+        <h2>Customer Reviews</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="review-quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    "Adorable products! Perfect for gifts!"
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </div>
+                <div class="review-author">- Maria</div>
+                <div class="review-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    "Great quality and excellent prices!"
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </div>
+                <div class="review-author">- Jake</div>
+                <div class="review-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pink PopMart | All rights reserved</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

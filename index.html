@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink PopMart - Home</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Light Pink Background */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffb6c1; /* Light Pink Navbar */
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f8bbd0; /* Lighter Pink on Hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f48fb1; /* Medium Pink */
+            color: #fff;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        /* Carousel */
+        .carousel-caption {
+            background-color: rgba(255, 182, 193, 0.7); /* Semi-Transparent Pink */
+            color: #fff;
+        }
+
+        /* New Arrivals & Special Offers */
+        .new-arrivals,
+        .special-offers,
+        .reviews {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        .new-arrivals h2,
+        .special-offers h2,
+        .reviews h2 {
+            color: #e91e63; /* Pink Heading */
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+        }
+
+        .card-title {
+            color: #c2185b; /* Darker Pink */
+        }
+
+        .btn-primary {
+            background-color: #f06292; /* Pink Button */
+            border-color: #f06292;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #e91e63; /* Darker Pink on Hover */
+            border-color: #e91e63;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffb6c1; /* Light Pink Footer */
+            color: #fff;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">Pink PopMart</div>
+      <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="sale.html" class="nav-link">Sale</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="cart.html" class="nav-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+  </nav>
+  <script src="nav-active.js"></script>
+  <br>
+  <br>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <h1 class="mb-3">Welcome to Pink PopMart!</h1>
+        <p class="mb-4">Your ultimate destination for all things cute and pink. Explore our wide selection of
+            collectibles, toys, and accessories designed to brighten your day.</p>
+        <a href="categories.html" class="btn btn-light btn-lg">Start Shopping</a>
+    </section>
+
+    <!-- Carousel Section -->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pink2.webp" class="d-block w-100" alt="Product 2" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>BUNNY Pink Sweetheart</h3>
+                    <p>An endearing Bunny figure dressed in pink, part of a limited edition series.</p>
+                    <a href="products.html" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="pink1.jpg" class="d-block w-100" alt="Product 1" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Labubu Pink Edition Figure</h3>
+                    <p>A charming figure of Labubu in a delightful pink hue, perfect for collectors.</p>
+                    <a href="products.html" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pink3.webp" class="d-block w-100" alt="Product 3" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Labubu V2: Dada Pink</h3>
+                    <p>A playful figure featuring Labubu in a seated pose, adorned in pink attire.</p>
+                    <a href="products.html" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+        <div class="container">
+            <h2 class="text-center mb-4">New Arrivals</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="pink4.jpg" class="card-img-top" alt="New Product 1"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">NSkullpanda Finding Mokoko Series</h5>
+                            <p class="card-text">A unique Skullpanda figure from the Mokoko series, presented in pink
+                                tones.</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="pink5.jpg" class="card-img-top" alt="New Product 2"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Crybaby Sad Club Plush Flower</h5>
+                            <p class="card-text">A soft plush figure from the Crybaby Sad Club series, featuring a pink
+                                flower design.</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="pink6.jpg" class="card-img-top" alt="New Product 3"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pink Panther Expressing Love Series</h5>
+                            <p class="card-text">A figurine from the Pink Panther series, capturing a joyful moment in
+                                pink.</p>
+                            <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="text-center mb-4">Special Offers!</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="offer p-4 text-center bg-white shadow-sm rounded">
+                        <h3>20% Off All Items!</h3>
+                        <p>Don't miss out on our limited-time offer. Shop now and save!</p>
+                        <a href="sale.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews container">
+      <h2>Customer Reviews</h2>
+      <div class="review-container">
+        <!-- Review Card 1 -->
+        <div class="review-card">
+          <div class="review-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            "Adorable products! Perfect for gifts!"
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </div>
+          <div class="review-author">- Maria</div>
+          <div class="review-rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- Review Card 2 -->
+        <div class="review-card">
+          <div class="review-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            "Great quality and excellent prices!"
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </div>
+          <div class="review-author">- Jake</div>
+          <div class="review-rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- Review Card 3 -->
+        <div class="review-card">
+          <div class="review-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            "Absolutely love this store! The quality of the products is amazing. Can't wait to shop again!"
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </div>
+          <div class="review-author">- Jane Doe</div>
+          <div class="review-rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- Review Card 4 -->
+        <div class="review-card">
+          <div class="review-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            "My new favorite place to shop for cute and unique items. Highly recommend!"
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </div>
+          <div class="review-author">- Sarah Lee</div>
+          <div class="review-rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    
+      <!-- New Row of Reviews -->
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+          <div class="review p-3 bg-light shadow-sm rounded">
+            <p>
+              <i class="fa fa-quote-left text-primary" aria-hidden="true"></i> 
+              "Fast delivery and exceptional customer service! Will definitely recommend to friends."
+              <i class="fa fa-quote-right text-primary" aria-hidden="true"></i>
+            </p>
+            <p class="author text-end">- Sam K.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="review p-3 bg-light shadow-sm rounded">
+            <p>
+              <i class="fa fa-quote-left text-primary" aria-hidden="true"></i>
+              "Affordable prices for such high-quality products. My go-to shop for gifts!"
+              <i class="fa fa-quote-right text-primary" aria-hidden="true"></i>
+            </p>
+            <p class="author text-end">- Nina T.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Highlighted Review -->
+      <div class="highlighted-review bg-danger text-white p-4 mt-4 rounded shadow-sm">
+        <h4 class="mb-3"><i class="fa fa-heart" aria-hidden="true"></i> Featured Review</h4>
+        <p>"A delightful shopping experience! The designs are so unique, and the packaging is beautiful. Great for collectors!"</p>
+        <p class="author text-end fw-bold">- Olivia P.</p>
+        <div class="review-rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p class="text-white mb-2">&copy; 2025 Pink PopMart | All rights reserved</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        links.forEach(link => {
+            const linkPage = link.getAttribute('href');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
